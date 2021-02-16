@@ -1,0 +1,152 @@
+ 
+
+body {
+    
+    margin: 0px;
+    text-shadow: 1px 1px rgb(189, 98, 166);
+    
+}
+
+a {
+    text-decoration: none;    
+}
+
+
+
+nav ul {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 0px;
+  text-align: center; 
+  padding: 20px ;
+  border-right: 50px ;
+}
+
+
+
+
+article ul {
+  margin: 60px ;
+  padding: 30px 0px; 
+  background-color: rgb(199, 98, 191);
+  box-shadow: 0px 0px 15px 2px rgb(187, 71, 148); 
+  border-radius: 15px;
+}
+
+article ul li {
+  list-style-type: none;
+}
+
+article ul li img {
+  width: 350px;
+  height: 225px;
+  float: left;
+  margin: 40px 55px;
+  box-shadow: 0px 0px 4px 4px rgb(156, 80, 131);
+  border-radius: 10px;
+}
+
+.section_divider {
+  border: 0; 
+  height: 1px; 
+  width: 80%;
+  background-image: (left, #f0f0f0, #b3417f, #f0f0f0);
+  background-image: (left, #f0f0f0, #b13b68, #f0f0f0);
+  background-image: (left, #f0f0f0, #b142a2, #f0f0f0);
+  background-image: (left, #f0f0f0, #ac3388, #f0f0f0); 
+}
+
+#about_us {
+  margin: 40px 0px;
+}
+
+.left_col {
+  display: inline-block;
+  margin: 10px 50px;
+  width: 45%;
+}
+
+.left_col h2 {
+  margin: 5px 0px;
+}
+
+.right_col {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 20px;
+  float: right;
+}
+
+
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 30px 0px 30px 0px;
+}
+
+section ul li {
+  list-style-type: none;
+}
+
+section ul li img {
+  width: 369px;
+  height: 250px;
+  float: left;
+  margin: 40px 55px 20px 55px;
+  box-shadow: 0px 0px 4px 4px grey;
+  border-radius: 10px;
+}
+
+
+
+#handler_img_cap {
+  margin-left: 110px;
+}
+
+#in_cookies_cap {
+  margin-left: 160px;
+}
+
+#contact {
+  font-size: 3em;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+
+
+
+table {
+  font-size: 1em;
+  /*width: 400px;*/
+  overflow-x: auto;
+  transition: all .5s ease;
+}
+
+#store_name {
+  margin: 10px 20px 40px 20px;
+}
+
+#table-title {
+  text-align: center;
+}
+
+table, th, td {
+   border: 2px rgb(187, 80, 142);
+}
+
+td, th, tr {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+td:hover {
+  background-color: #f5f5f5;
+}
