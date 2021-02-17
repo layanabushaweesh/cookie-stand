@@ -3,11 +3,11 @@
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 let stores = [
-  new Store(23, 65, 6.3, '1st and Pike'),
-  new Store(3, 24, 1.2, 'Seatac Airport'),
-  new Store(11, 38, 3.7, 'Seattle Center'),
-  new Store(20, 38, 2.3, 'Capitol Hill'),
-  new Store(2, 16, 4.6, 'Alki')
+  new Store(23, 65, 6.3, 'seattle'),
+  new Store(3, 24, 1.2, 'tokyo'),
+  new Store(11, 38, 3.7, 'dubai'),
+  new Store(20, 38, 2.3, 'paris'),
+  new Store(2, 16, 4.6, 'lima')
 ];
 
 function Store(minCustomer, maxCustomer, avgCookiesPer, store) {//constructing store blueprint
