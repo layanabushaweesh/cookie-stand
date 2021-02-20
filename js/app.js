@@ -1,23 +1,23 @@
 'use strict';
 
-var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+const storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
-var stores = [
+let stores = [
   new Store(23, 65, 6.3, 'seattle'),
   new Store(3, 24, 1.2, 'tokyo'),
   new Store(11, 38, 3.7, 'dubai'),
   new Store(20, 38, 2.3, 'paris'),
   new Store(2, 16, 4.6, 'lima')
-];
+]
 
-function Store(minCustomer, maxCustomer, avgCookiesPer, store) {//constructing store blueprint
+function Store(minCustomer, maxCustomer, avgCookiesPer, store) {//constructor function
   this.storeName = store;
   this.minCustomer = minCustomer,
   this.maxCustomer = maxCustomer,
   this.avgCookiesPer = avgCookiesPer,
   this.storeCookiesPerHour = [];
   this.totalDailyCookies = 0;
-};
+}
 
 Store.prototype.randomCustomerCount = function() {//generating random # of cookies per customer/hr.
   return (Math.floor((Math.random() * (this.maxCustomer - this.minCustomer) + this.minCustomer) * this.avgCookiesPer));
@@ -34,19 +34,19 @@ Store.prototype.cookiesPerHour = function() {//generating total number of cookie
 };
 
 Store.prototype.renderRow = function(parentTable) {//creating and rendering row and data for store
-  var storeRow = document.createElement('tr');
+  let storeRow = document.createElement('tr');
   parentTable.appendChild(storeRow);
-  var storeNameTH = document.createElement('th');
+  let storeNameTH = document.createElement('th');
   storeNameTH.textContent = this.storeName;
   storeRow.appendChild(storeNameTH);
   this.cookiesPerHour();
 
-  for(var i = 0; i < this.storeCookiesPerHour.length; i++) {
-    var cookieTD = document.createElement('td');
+  for(let i = 0; i < this.storeCookiesPerHour.length; i++) {
+    let cookieTD = document.createElement('td');
     cookieTD.textContent = this.storeCookiesPerHour[i];
     storeRow.appendChild(cookieTD);
   }
-  var totalTD = document.createElement('td');
+  let totalTD = document.createElement('td');
   totalTD.textContent = this.totalDailyCookies;
   storeRow.appendChild(totalTD);
 };
@@ -54,20 +54,20 @@ Store.prototype.renderRow = function(parentTable) {//creating and rendering row 
 
 function renderTable() {//function to create table structure
   //making thead
-  var tableData = document.getElementById('city');
+  let tableData = document.getElementById('city');
   tableData.textContent = '';
 
-  var newTHead = document.createElement('thead');
+  let newTHead = document.createElement('thead');
   tableData.appendChild(newTHead);
   //making tr
-  var newTR = document.createElement('tr');
+ let newTR = document.createElement('tr');
   newTHead.appendChild(newTR);
   //making th
-  var newTH = document.createElement('th');
+  let newTH = document.createElement('th');
   newTR.appendChild(newTH);
   //adding hours to th's
 
-  for(var i = 0; i < storeHours.length; i++) {//retrieving/rendering hours from storeHours array.
+  for(let i = 0; i < storeHours.length; i++) {//retrieving/rendering hours from storeHours array.
     var newTh = document.createElement('th');
     newTh.textContent = storeHours[i];
     newTR.appendChild(newTh);
@@ -79,15 +79,15 @@ function renderTable() {//function to create table structure
   newTR.appendChild(totalTH);
 
   //rendering and populating each store row
-  for(var j = 0; j < stores.length; j++) {
+  for(let j = 0; j < stores.length; j++) {
     stores[j].renderRow(tableData);
   }
   renderTableFoot();
 };
 
-var renderTableFoot = function() {
-  var tableData = document.getElementById ('store_data');
-  var hourTotalTFoot = document.createElement('tfoot');
+let renderTableFoot = function() {
+  let tableData = document.getElementById ('store_data');
+  let hourTotalTFoot = document.createElement('tfoot');
   tableData.appendChild(hourTotalTFoot);
 
   var hourTotalTRow = document.createElement('tr');

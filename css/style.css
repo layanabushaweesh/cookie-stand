@@ -3,7 +3,9 @@
 body {
     
     margin: 0px;
-    text-shadow: 1px 1px rgb(189, 98, 166);
+   
+    font-family: 'Akaya Kanadaka', cursive;
+    color: black;
     
 }
 
@@ -11,6 +13,11 @@ a {
     text-decoration: none;    
 }
 
+#first{
+  top: 150px;
+  font-size: x-large;
+  position:absolute;
+}
 
 
 nav ul {
@@ -26,29 +33,33 @@ nav ul li {
   text-align: center; 
   padding: 20px ;
   border-right: 50px ;
+  color: black;
+}
+nav{
+  color: black;
 }
 
-
-
+ul {
+  width: 100%;
+  font-size: xx-large;
+}
 
 article ul {
   margin: 60px ;
   padding: 30px 0px; 
-  background-color: rgb(199, 98, 191);
-  box-shadow: 0px 0px 15px 2px rgb(187, 71, 148); 
+ color: black;
+  
   border-radius: 15px;
 }
 
-article ul li {
-  list-style-type: none;
-}
+
 
 article ul li img {
   width: 350px;
   height: 225px;
   float: left;
   margin: 40px 55px;
-  box-shadow: 0px 0px 4px 4px rgb(156, 80, 131);
+
   border-radius: 10px;
 }
 
@@ -56,10 +67,6 @@ article ul li img {
   border: 0; 
   height: 1px; 
   width: 80%;
-  background-image: (left, #f0f0f0, #b3417f, #f0f0f0);
-  background-image: (left, #f0f0f0, #b13b68, #f0f0f0);
-  background-image: (left, #f0f0f0, #b142a2, #f0f0f0);
-  background-image: (left, #f0f0f0, #ac3388, #f0f0f0); 
 }
 
 #about_us {
@@ -100,7 +107,7 @@ section ul li img {
   height: 250px;
   float: left;
   margin: 40px 55px 20px 55px;
-  box-shadow: 0px 0px 4px 4px grey;
+  
   border-radius: 10px;
 }
 
@@ -115,6 +122,7 @@ section ul li img {
 }
 
 #contact {
+  color: black;
   font-size: 3em;
   text-align: center;
   margin: 0px 0px 50px 0px;
@@ -125,9 +133,9 @@ section ul li img {
 
 table {
   font-size: 1em;
-  /*width: 400px;*/
-  overflow-x: auto;
-  transition: all .5s ease;
+  width: 400px;
+ 
+  
 }
 
 #store_name {
@@ -136,17 +144,36 @@ table {
 
 #table-title {
   text-align: center;
+
 }
 
 table, th, td {
-   border: 2px rgb(187, 80, 142);
+   border:  solid 1px black;
+   
+  
 }
 
 td, th, tr {
+  border: solid 1 px;
   padding: 5px 5px;
   text-align: center;
 }
 
-td:hover {
-  background-color: #f5f5f5;
+
+#store_form{
+  float: right;
+  top: 50px;
+  right: 100px;
+  position: relative;
+font-size: large;
+}
+
+#fish{
+  position: relative;
+  float:right;
+  top:50px;
+}
+
+#first{
+  top: 150px;
 }
